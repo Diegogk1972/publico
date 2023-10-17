@@ -3,4 +3,4 @@
   - name: create a file on a remote machine
     file:
     dest: /tmp/file
-    state: '{{file_state}}'
+    state: touch
