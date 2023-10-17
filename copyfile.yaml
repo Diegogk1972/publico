@@ -1,1 +1,7 @@
-copyfile
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: /srv/nacho.txt
+    dest: /etc/nacho.txt
+    owner: diego  
+    group: diego
+    mode: '0644'
