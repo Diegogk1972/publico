@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-  - name: create a file
+  - name: delete a file
     file:
       dest: /tmp/file
-      state: touch
+      state: absent
