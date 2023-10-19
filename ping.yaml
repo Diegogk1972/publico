@@ -1,0 +1,6 @@
+---
+
+- hosts:all
+  tasks:
+  -name: This is basic connectivity test
+     ping:
