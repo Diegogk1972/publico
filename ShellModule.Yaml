@@ -1,6 +1,6 @@
 ---
 # variables like $HOME and operations like "<", ">", "|", ";" and "&" will  work 
- - hosts: ALL
+ - hosts: all
    tasks:
     - name : Create a simple file using shell module
       shell: touch mytestfile.txt            # Runs a shell command
