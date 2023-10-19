@@ -1,4 +1,4 @@
-- hosts:all
+- hosts: all
   tasks:
-  - name: This is basic connectivity test
+  - name: create a file
     ping:
