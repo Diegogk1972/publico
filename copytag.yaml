@@ -2,6 +2,7 @@
   tasks:
   - name: deploy a simple template file
     ansible.builtin.copy:
+      remote_src: no
       src: /srv/nacho.txt
       dest: /tmp/nacho.txt
       owner: diego
