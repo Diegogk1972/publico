@@ -1,9 +1,11 @@
 - hosts: all
   tasks:
   - name: deploy a simple template file
-    template:
+    ansible.builtin.copy:
       src: /shared/tst_copy.txt
-      dest: /tmp/tst_copy_filled.txt
-    tags:
-      - create
+      dest: /tmp/tst_copy.txt
+      owner: awx
+      group: awx
+      mode: '0755'
+    
     
