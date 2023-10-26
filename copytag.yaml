@@ -2,7 +2,7 @@
   tasks:
   - name: deploy a simple template file
     template:
-      src: /home/diego/tst_copy.txt
+      src: /tmp/tst_copy.txt
       dest: /tmp/tst_copy_filled.txt
     tags:
       - create
