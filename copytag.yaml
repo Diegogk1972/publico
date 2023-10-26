@@ -2,8 +2,8 @@
   tasks:
   - name: deploy a simple template file
     ansible.builtin.copy:
-      src: /shared/tst_copy.txt
-      dest: /tmp/tst_copy.txt
+      src: /srv/nacho.txt
+      dest: /tmp/nacho.txt
       owner: diego
       group: diego
       mode: '0755'
