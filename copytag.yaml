@@ -4,8 +4,8 @@
     ansible.builtin.copy:
       src: /shared/tst_copy.txt
       dest: /tmp/tst_copy.txt
-      owner: awx
-      group: awx
+      owner: diego
+      group: diego
       mode: '0755'
     
     
