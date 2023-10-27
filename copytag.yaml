@@ -3,7 +3,7 @@
   - name: deploy a simple template file
     ansible.builtin.copy:
       remote_src: no
-      src: /var/lib/awx/projects/tst_copy.txt
+      src: /home/diego/tst_copy.txt
       dest: /home/diego/tst_copy.txt
       owner: diego
       group: diego
