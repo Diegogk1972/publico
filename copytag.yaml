@@ -4,7 +4,7 @@
     ansible.builtin.copy:
       remote_src: no
       src: /var/lib/awx/projects/tst_copy.txt
-      dest: /tmp/tst_copy.txt
+      dest: /home/diego/tst_copy.txt
       owner: diego
       group: diego
       mode: '0755'
