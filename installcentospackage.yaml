@@ -7,20 +7,20 @@
 #    yum: name=vsftpd
 #  - name: enable vsftpd
 #    service: name=vsftpd enabled=true
-- name: Create a directory if it does not exist
-  ansible.builtin.file:
-    path: /var/ftp
-    state: directory
-    mode: '0755'
-- name: Create a directory if it does not exist
-  ansible.builtin.file:
-    path: /var/ftp/pub
-    state: directory
-    mode: '0755'    
-- name: create readme file
-  copy:
-    content: "welcome to my ftp server"
-    dest: /var/ftp/pub/README
-    force: no
-    mode: 0444
+  - name: Create a directory if it does not exist
+    ansible.builtin.file:
+      path: /var/ftp
+      state: directory
+      mode: '0755'
+  - name: Create a directory if it does not exist
+    ansible.builtin.file:
+      path: /var/ftp/pub
+      state: directory
+      mode: '0755'    
+  - name: create readme file
+    copy:
+      content: "welcome to my ftp server"
+      dest: /var/ftp/pub/README
+      force: no
+      mode: 0444
 ...
