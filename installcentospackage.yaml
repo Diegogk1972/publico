@@ -1,8 +1,4 @@
-- hosts: all
-  tasks:
-- name: Install the package "VSFTPD" 
+- name: Update repositories cache and install "foo" package
   ansible.builtin.apt:
-    name: vsftpd
-    state: latest
+    name: foo
     update_cache: yes
-    
