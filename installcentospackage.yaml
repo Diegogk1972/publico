@@ -1,6 +1,7 @@
 ---
 - name: simple playbook
   hosts: all
+  become: yes
   tasks:
   - name: install vsftpd
     yum: name=vsftpd
