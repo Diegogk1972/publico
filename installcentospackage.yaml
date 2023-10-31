@@ -6,5 +6,5 @@
 #  - name: install vsftpd
 #    yum: name=vsftpd
   - name: enable vsftpd
-  service: name=vsftpd enabled=true
+    service: name=vsftpd enabled=true
 ...
