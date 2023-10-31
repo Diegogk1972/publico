@@ -1,6 +1,6 @@
 - hosts: all
-  become: yes
   tasks:
+- name: Install the package "VSFTPD" 
   ansible.builtin.apt:
     name: vsftpd
     state: latest
