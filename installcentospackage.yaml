@@ -10,7 +10,7 @@
   - name: create readme file
     copy:
       content: "welcome to my ftp server"
-      dest: /var/ftp/put/README
+      dest: /tmp/README
       force: no
       mode: 0444
 ...
