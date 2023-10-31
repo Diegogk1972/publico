@@ -5,6 +5,6 @@
   tasks:
 #  - name: install vsftpd
 #    yum: name=vsftpd
-  -name: enable vsftpd
+  - name: enable vsftpd
   service: name=vsftpd enabled=true
 ...
