@@ -3,6 +3,8 @@
   hosts: all
   become: yes
   tasks:
-  - name: install vsftpd
-    yum: name=vsftpd
+#  - name: install vsftpd
+#    yum: name=vsftpd
+  -name: enable vsftpd
+  service: name=vsftpd enabled=true
 ...
