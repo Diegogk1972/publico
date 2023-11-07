@@ -2,8 +2,7 @@
 - name: reboot win server 
   hosts: all
   tasks:
-    - name: Touch a file (creates if not present, updates modification time if present)
-      win_file:
-        path: C:\Temp\foo.conf
-        state: touch
+    - name: Reboot a slow machine that might have lots of updates to apply
+      ansible.windows.win_reboot:
+        reboot_timeout: 3600
 ...
