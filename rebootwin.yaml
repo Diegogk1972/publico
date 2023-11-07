@@ -2,7 +2,7 @@
 - name: reboot win server 
   hosts: all
   tasks:
-    - name: Reboot a slow machine that might have lots of updates to apply
+    - name: reboot windows host
       ansible.windows.win_reboot:
         reboot_timeout: 3600
 ...
