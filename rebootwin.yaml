@@ -1,8 +1,7 @@
 ---
-- name: reboot win server 
+- name: simple playbook
   hosts: all
   tasks:
-    - name: reboot windows host
+    - name: Example from an Ansible Playbook
       ansible.windows.win_reboot:
-        reboot_timeout: 3600
 ...
