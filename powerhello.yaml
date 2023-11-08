@@ -1,6 +1,7 @@
 ---
-- name: simple powershell playbook
+- name: simple playbook
   hosts: all
   tasks:
-    ansible.windows.win_shell: C:\somescript.ps1 >> C:\somelog.txt    
+    - name: Example from an Ansible Playbook
+      ansible.windows.win_shell: C:\somescript.ps1 >> C:\somelog.txt    
 ...
