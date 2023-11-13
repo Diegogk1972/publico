@@ -1,6 +1,10 @@
 ---
 - hosts: all
   tasks:
+    - name: hostname
+      shell: hostname > /tmp/results.txt
     - name: do a uname
-      shell: uname -a > /tmp/results.txt
+      shell: uname -a >> /tmp/results.txt
+    - name: whoami
+      shell: whoami >> /tmp/results.txt    
 ...
