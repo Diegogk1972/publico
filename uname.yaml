@@ -1,3 +1,6 @@
+---
 - hosts: all
   tasks:
-  - name: create a file
+    - name: do a uname
+      shell: uname -a > /tmp/results.txt
+...
