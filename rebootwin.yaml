@@ -2,7 +2,7 @@
 - name: simple playbook
   hosts: all
   collections:
-    - ansible.windows
+  - ansible.windows
   tasks:
     - name: Example from an Ansible Playbook
       ansible.windows.win_reboot:
