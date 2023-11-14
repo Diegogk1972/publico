@@ -2,8 +2,6 @@
 - name: simple playbook
   hosts: all
   collections:
-    - my_namespace.my_collection
-  collections:
     - community.windows
   tasks:
     - name: Install all updates and reboot as many times as needed
